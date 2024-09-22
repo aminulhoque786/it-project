@@ -1,0 +1,23 @@
+/* header.css */
+.menu {
+  position: relative;
+  top: -100px; /* Initially hidden above the viewport */
+  transition: top 0.3s ease-in-out, background-color 0.3s;
+}
+
+.menu1 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: top 0.3s ease-in-out, background-color 0.3s;
+}
+
+.menu-open {
+  top: 0; /* Show menu when scrolled */
+}
+
+.menu-hidden {
+  top: -100px; /* Hide menu when not scrolled */
+}
